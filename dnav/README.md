@@ -1,20 +1,20 @@
 # dnav project
 
 ### Setup sublime text:
-  [] Run editor config: `ctrl + shift + p` -> choose install package manager in type: editorconfig. Install it then restart sublime text
+- [ ] Run editor config: `ctrl + shift + p` -> choose install package manager in type: editorconfig. Install it then restart sublime text
 
 ### Setup vitual machine (Vagrant):
+- [ ] Install virtual box to support vagrant: http://ubuntuhandbook.org/index.php/2016/07/virtualbox-5-1-released/
 
-  [] Install virtual box to support vagrant: http://ubuntuhandbook.org/index.php/2016/07/virtualbox-5-1-released/
-  Move to self-speed folder:
-  [] Install vagrant: `vagrant init hashicorp/precise64`
-  [] Run `vagrant up --provision` to install package needed
-  [] Open vagrant machine: `vagrant ssh`
-  [] Move to /project and run `docpad run` to start docpad project
+#### Move to self-speed folder:
+- [ ] Install vagrant: `vagrant init hashicorp/precise64`
+- [ ] Run `vagrant up --provision` to install package needed
+- [ ] Open vagrant machine: `vagrant ssh`
+- [ ] Move to /project and run `docpad run` to start docpad project
   Hope you enjoy it. Thanks!
 
 ### Run project
-  [] localhost:88/
+- [ ] localhost:88/
 
 ### Project structure
 
