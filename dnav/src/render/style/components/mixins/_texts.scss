@@ -1,0 +1,15 @@
+@mixin text-style($font-size: false, $line-height: false, $font-weight: false, $color: false, $padding: false) {
+  font-size: $font-size;
+  @if $line-height != false {
+    line-height: $line-height;
+  }
+  @if $font-weight != false {
+    font-weight: $font-weight;
+  }
+  @if $color != false {
+    color: $color;
+  }
+  @if $padding != false {
+    padding: $padding;
+  }
+}

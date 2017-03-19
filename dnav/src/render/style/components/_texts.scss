@@ -1,0 +1,3 @@
+.primary-heading {
+  @include text-style(24px, 24px, bold, $base-color, $extra-padding);
+}

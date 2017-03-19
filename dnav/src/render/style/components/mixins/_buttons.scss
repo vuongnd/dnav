@@ -1,0 +1,12 @@
+@mixin button-style($padding: false, $bg: false, $bg-color: false, $border: false) {
+  padding: $padding;
+  @if $bg != false {
+    background-image: $bg;
+  }
+  @if $bg-color != false {
+    background-color: $bg-color;
+  }
+  @if $border != false {
+    border: $border;
+  }
+}
