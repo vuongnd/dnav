@@ -1,3 +1,15 @@
-.primary-heading {
+%primary-heading {
   @include text-style(24px, 24px, bold, $base-color, $extra-padding);
+}
+
+%secondary-heading {
+  @include text-style(20px, 20px, bold, $base-color, $larger-padding);
+}
+
+%primary-body {
+  @include text-style(13px, 13px, bold, $base-color, $medium-padding);
+}
+
+%secondary-body {
+  @include text-style(13px, 13px, regular, $base-color, $medium-padding);
 }
