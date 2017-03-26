@@ -1,0 +1,16 @@
+.footer-hidden {
+  height: 50px;
+}
+
+.main-footer {
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #b75454 ;
+
+  img {
+    width: 40px;
+    margin: 5px;
+  }
+}

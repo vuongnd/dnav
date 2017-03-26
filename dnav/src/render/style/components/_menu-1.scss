@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'fontleroybrownregular';
+    src: url('../fonts/menu-1/FontleroyBrown-webfont.eot');
+    src: url('../fonts/menu-1/FontleroyBrown-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/menu-1/FontleroyBrown-webfont.woff') format('woff'),
+         url('../fonts/menu-1/FontleroyBrown-webfont.ttf') format('truetype'),
+         url('../fonts/menu-1/FontleroyBrown-webfont.svg#fontleroybrownregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu-front,
+.menu-back {
+  width: 50%;
+  float: left;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-front {
+  background-image: url('../images/menu-1/menu-1-front.png');
+  background-size: 100% 100%;
+}
+
+.menu-back {
+  background-image: url('../images/menu-1/menu-1-back.png');
+  background-size: 100% 100%;
+}
+
+.menu-list {
+  list-style-type: none;
+
+  &__items {
+    font-family: 'fontleroybrownregular';
+    color: #E6C653;
+    font-size: 30px;
+  }
+}
+
