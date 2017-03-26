@@ -1,13 +1,18 @@
-@font-face {
-    font-family: 'fontleroybrownregular';
-    src: url('../fonts/menu-1/FontleroyBrown-webfont.eot');
-    src: url('../fonts/menu-1/FontleroyBrown-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/menu-1/FontleroyBrown-webfont.woff') format('woff'),
-         url('../fonts/menu-1/FontleroyBrown-webfont.ttf') format('truetype'),
-         url('../fonts/menu-1/FontleroyBrown-webfont.svg#fontleroybrownregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+body {
+  background-image: url('../images/layouts/bgmenu.png'), url('../images/layouts/clounds.png');
+  background-size: cover;
+}
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bgimage {
+  0%   {background-color:red; left:0px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes bgimage {
+  0%   {background-color:red; left:0px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 
 .container {
@@ -33,15 +38,28 @@
 .menu-back {
   background-image: url('../images/menu-1/menu-1-back.png');
   background-size: 100% 100%;
+  position: relative;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .menu-list {
   list-style-type: none;
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  overflow: auto;
 
   &__items {
     font-family: 'fontleroybrownregular';
     color: #E6C653;
     font-size: 30px;
+  }
+
+  hr {
+    color: #E6C653;
   }
 }
 
