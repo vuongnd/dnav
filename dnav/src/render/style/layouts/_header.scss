@@ -1,0 +1,29 @@
+#main-menu {
+  font-family: 'cinzelbold';
+  background-color: #301b14;
+  margin-bottom: $base-padding;
+
+  .menu {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: $base-padding / 2 0;
+
+    &__list {
+      float: left;
+      border: 3px double red;
+      margin: 0 2.5px;
+
+      &:hover {
+        border-color: white;
+      }
+
+      a {
+        color: #E6C653;
+        display: block;
+        padding: 20px - 3px 50px - 3px;
+        text-decoration: none;
+      }
+    }
+  }
+}

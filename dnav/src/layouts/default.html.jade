@@ -4,4 +4,6 @@ head
   != getBlock('scripts').toHTML()
   link(rel='stylesheet', href='/style/main.css')
 body
+  != partial('header.html.jade')
   != content
+  != partial('footer.html.jade')

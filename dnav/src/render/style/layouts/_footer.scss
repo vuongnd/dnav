@@ -1,0 +1,57 @@
+.footer-hidden {
+  height: 50px;
+}
+
+.main-footer {
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  &:hover {
+  .search-key,
+  .search-key:focus {
+      width: 50%;
+    }
+  }
+}
+
+.form-search {
+  height: 40px;
+  margin: 5px 0;
+  display: flex;
+  align-items: midle;
+  padding-left: $base-padding !important;
+
+  .search-key {
+    width: 60%;
+    border-radius: 20px;
+    padding-left: $base-padding;
+    font-family: 'fontleroybrownregular';
+    font-size: 30px;
+    width: 0;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+  }
+
+  .search-btn {
+    @include square(40px);
+    margin-left: 5px;
+    border-radius: 25%;
+
+    img {
+      width: 20px;
+      margin: 5px;
+    }
+  }
+
+  .search-key,
+  .search-btn {
+    border: 1px solid black;
+    padding: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

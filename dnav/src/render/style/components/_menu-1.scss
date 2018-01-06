@@ -1,0 +1,65 @@
+body {
+  background-image: url('../images/layouts/bgmenu.png'), url('../images/layouts/clounds.png');
+  background-size: cover;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bgimage {
+  0%   {background-color:red; left:0px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes bgimage {
+  0%   {background-color:red; left:0px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu-front,
+.menu-back {
+  width: 50%;
+  float: left;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-front {
+  background-image: url('../images/menu-1/menu-1-front.png');
+  background-size: 100% 100%;
+}
+
+.menu-back {
+  background-image: url('../images/menu-1/menu-1-back.png');
+  background-size: 100% 100%;
+  position: relative;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.menu-list {
+  list-style-type: none;
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  overflow: auto;
+
+  &__items {
+    font-family: 'fontleroybrownregular';
+    color: #E6C653;
+    font-size: 30px;
+  }
+
+  hr {
+    color: #E6C653;
+  }
+}
+

@@ -1,0 +1,7 @@
+- var menu_lists = ['Trang Chủ', 'Món Mới', 'Đặc Biệt', 'Giảm Giá', 'Sách', 'Liên Hệ']
+header.main-header
+  nav#main-menu
+    ul.menu
+      each item,i in menu_lists
+        li(id= 'item-' + i).menu__list
+          a(href="#")= item
